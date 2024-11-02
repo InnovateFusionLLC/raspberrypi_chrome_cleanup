@@ -13,7 +13,7 @@ desktop_file_path=~/Desktop/chromium-clean.desktop
 echo "[Desktop Entry]
 Name=Chromium Clean
 Comment=Open Chromium without scrambling
-Exec=lxterminal -e 'bash -c "chromium-clean"'
+Exec=lxterminal -e "bash -c 'export DISPLAY=:10 && chromium-browser --no-sandbox --disable-gpu --disable-software-rasterizer'"
 Icon=chromium-browser
 Terminal=false
 Type=Application
